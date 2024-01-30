@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+}
+
+.header__top {
+  border: 1px solid lightgray;
+  height: 40px;
+  flex-shrink: 0;
+  background: url(./assets/image/browser.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__bottom {
+  margin: 50px 76px 0 76px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 201px;
+  height: 40px;
+  flex-shrink: 0;
+  background-image: url(./assets/image/logo.svg);
+}
+
+.button {
+  background-color: #5222d0;
+  color: #ffffff;
+  font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__button {
+  font-size: 13px;
+  width: 115px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.header__button-image {
+  margin: 0 0 3px 5px;
+  height: 14px;
+  width: 14px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  height: 700px;
+  padding-left: 128px;
+}
+
+.content__title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: end;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  line-height: 120%;
+  font-weight: bolder;
+}
+
+.content__text {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+  align-self: center;
+}
+
+.content__button {
+  font-size: 35px;
+  font-weight: bold;
+  width: 270px;
+  height: 84px;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-self: start;
+}
+
+.content__button-image {
+  margin: 0 0 6.69px 16.44px;
+  width: 41.724px;
+  height: 28.743px;
+}
+
+.content__pic {
+  background: url(./assets/image/pic.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.navigation {
+  display: flex;
+  align-self: end;
+  padding-left: 126px;
+  gap: 34px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  height: 32px;
+}
+
+.footer1__navigation {
+  color: #5222d0;
+}
+
+.capture {
+  margin: 89px 0 0 125px;
+}
+
+.footer2__navigation {
+  color: #000;
+}
+
+.facilities {
+  margin: 40px 70px 80px 125px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+
+.card {
+  width: 364px;
+}
+
+.card__image {
+  flex-shrink: 0;
+  background-image: url(./assets/image/Rectangle_11.png);
+  width: 364px;
+  height: 233px;
+  flex-shrink: 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+.card__image_scientist {
+  background: url(./assets/image/praktikum3.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 15px;
+  left: 35px;
+  width: 298px;
+  height: 255px;
+}
+
+.card__image_robot {
+  background: url(./assets/image/praktikum2.png);
+  position: absolute;
+  top: 0;
+  left: 24px;
+  width: 303px;
+  height: 278px;
+}
+
+.card__image_user {
+  background: url(./assets/image/praktikum1.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 12px;
+  height: 265px;
+  width: 340px;
+}
+
+.card__title {
+  font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 120%;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.card__text {
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.card__text_free {
+  width: 365px;
+}
+
+.card_subscription {
+  background-color: #ec615b;
+}
+
+.card__title_subscription {
+  color: #fff;
+  margin-left: 18px;
+  width: 325px;
+}
+
+.card__form {
+  margin-left: 18px;
+}
+
+.card__form_email {
+  width: 323px;
+  height: 50px;
+  flex-shrink: 0;
+  color: 000;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  padding-left: 16px;
+}
+
+.card__button {
+  font-size: 13px;
+  font-style: normal;
+  font-size: 13px;
+  width: 135px;
+  height: 38px;
+  flex-shrink: 0;
+  margin: 23px 0 0 18px;
+}
