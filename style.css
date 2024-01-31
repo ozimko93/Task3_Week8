@@ -8,12 +8,12 @@
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
 }
 
 .header__top {
   border: 1px solid lightgray;
-  height: 40px;
+  height: 2.7vw;
   flex-shrink: 0;
   background: url(./assets/image/browser.png);
   background-repeat: no-repeat;
@@ -21,16 +21,18 @@
 }
 
 .header__bottom {
-  margin: 50px 76px 0 76px;
+  margin: 3.4vw 5.3vw 0 5.3vw;
   display: flex;
   justify-content: space-between;
 }
 
 .header__logo {
-  width: 201px;
-  height: 40px;
+  width: 13.9vw;
+  height: 2.8vw;
   flex-shrink: 0;
-  background-image: url(./assets/image/logo.svg);
+  background: url(./assets/image/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .button {
@@ -47,35 +49,39 @@
 }
 
 .header__button {
-  font-size: 13px;
-  width: 115px;
-  height: 38px;
+  font-size: 0.7rem;
+  width: 7.7vw;
+  height: 2.5vw;
   flex-shrink: 0;
 }
 
 .header__button-image {
-  margin: 0 0 3px 5px;
-  height: 14px;
-  width: 14px;
+  margin: 0 0 0.2vw 0.34vw;
+  align-self: center;
+  height: 0.97vw;
+  width: 0.97vw;
 }
 
 .content {
   display: grid;
-  grid-template-columns: 30% 65%;
-  height: 700px;
-  padding-left: 128px;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 38vh 13vh 8vh;
+  height: 75vh;
+  width: 99vw;
+  padding-left: 8.8vw;
 }
 
 .content__title {
+  padding-top: 3vw;
   grid-column: 1/2;
   grid-row: 1/2;
-  align-self: end;
+  align-items: start;
 }
 
 .title {
   text-transform: uppercase;
   font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
-  font-size: 60px;
+  font-size: 3.8vw;
   line-height: 120%;
   font-weight: bolder;
 }
@@ -84,33 +90,38 @@
   grid-column: 1/2;
   grid-row: 2/3;
   font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: 300;
   line-height: 160%;
-  align-self: center;
+  align-items: start;
 }
 
 .content__button {
-  font-size: 35px;
-  font-weight: bold;
-  width: 270px;
-  height: 84px;
   grid-column: 1/2;
-  grid-row: 3/4;
-  align-self: start;
+  grid-row: 3;
+  margin-top: 0.9vw;
+}
+
+.content__button_buy {
+  font-size: 1.6vw;
+  font-weight: bold;
+  width: 14vw;
+  height: 4.3vw;
+  align-items: center;
 }
 
 .content__button-image {
-  margin: 0 0 6.69px 16.44px;
-  width: 41.724px;
-  height: 28.743px;
+  margin: 0 0 0 1.1vw;
 }
 
 .content__pic {
   background: url(./assets/image/pic.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  background-size: 100% 100%;
+  position: relative;
+  height: 81vh;
+  top: -1vh;
+  display: grid;
   grid-column: 2/3;
   grid-row: 1/4;
 }
@@ -118,9 +129,8 @@
 .navigation {
   display: flex;
   align-self: end;
-  padding-left: 126px;
-  gap: 34px;
-  font-size: 20px;
+  gap: 2.3vw;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
@@ -130,84 +140,94 @@
 
 .footer1__navigation {
   color: #5222d0;
+  margin-left: 8.8vw;
 }
 
 .capture {
-  margin: 89px 0 0 125px;
+  margin: 4vw 0 0 8.8vw;
 }
 
 .footer2__navigation {
   color: #000;
+  display: flex;
+  justify-self: flex-start;
+  margin: 2vw 0 2vw 8.8vw;
 }
 
 .facilities {
-  margin: 40px 70px 80px 125px;
+  width: 84vw;
+  margin: 2vw 0 1.5vw 8.8vw;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 75px;
 }
 
 .card {
-  width: 364px;
+  width: 22.56vw;
+  margin-bottom: 3.3vw;
 }
 
 .card__image {
   flex-shrink: 0;
   background-image: url(./assets/image/Rectangle_11.png);
-  width: 364px;
-  height: 233px;
-  flex-shrink: 0;
-  margin-bottom: 40px;
+  width: 22.56vw;
+  height: 15vw;
+  margin-bottom: 2.1vw;
   position: relative;
 }
 .card__image_scientist {
   background: url(./assets/image/praktikum3.png);
   position: absolute;
   background-repeat: no-repeat;
-  top: 15px;
-  left: 35px;
-  width: 298px;
-  height: 255px;
+  background-size: contain;
+  top: 0.7vw;
+  left: 2.1vw;
+  width: 19vw;
+  height: 18vw;
 }
 
 .card__image_robot {
   background: url(./assets/image/praktikum2.png);
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
   top: 0;
-  left: 24px;
-  width: 303px;
-  height: 278px;
+  left: 1.7vw;
+  width: 18.5vw;
+  height: 19vw;
 }
 
 .card__image_user {
   background: url(./assets/image/praktikum1.png);
   position: absolute;
   background-repeat: no-repeat;
-  top: 5px;
-  left: 12px;
-  height: 265px;
-  width: 340px;
+  background-size: contain;
+  top: 0.5vw;
+  left: 0.9vw;
+  height: 18vw;
+  width: 21.2vw;
 }
 
 .card__title {
   font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 1.9vw;
   font-weight: bolder;
   line-height: 120%;
-  margin-bottom: 10px;
-  margin-top: 25px;
+  margin-bottom: 0.8vw;
+  margin-top: 1vw;
+  text-transform: uppercase;
 }
 
 .card__text {
   font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
 }
 
 .card__text_free {
-  width: 365px;
+  width: 23vw;
 }
 
 .card_subscription {
@@ -216,33 +236,32 @@
 
 .card__title_subscription {
   color: #fff;
-  margin-left: 18px;
-  width: 325px;
+  margin-left: 1.2vw;
+  width: 23vw;
 }
 
 .card__form {
-  margin-left: 18px;
+  margin-left: 1.2vw;
+  width: 22.56vw;
 }
 
 .card__form_email {
-  width: 323px;
-  height: 50px;
-  flex-shrink: 0;
+  width: 20vw;
+  height: 3vw;
   color: 000;
   font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
-  padding-left: 16px;
+  padding-left: 0.9vw;
 }
 
 .card__button {
-  font-size: 13px;
+  font-size: 0.9vw;
   font-style: normal;
-  font-size: 13px;
-  width: 135px;
-  height: 38px;
+  width: 9vw;
+  height: 3vw;
   flex-shrink: 0;
-  margin: 23px 0 0 18px;
+  margin: 1vw 0 0 1.2vw;
 }
